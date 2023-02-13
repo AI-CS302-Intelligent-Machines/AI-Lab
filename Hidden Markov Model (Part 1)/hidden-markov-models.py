@@ -157,13 +157,28 @@ def log_prob(c1):
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-# Values for the first iteration
+# Values initially
 
 oldLogProb = -10000000
 print("A: \n", A)
 print("B: \n", np.concatenate((V.reshape(1, M), B), axis=0).T)
 print("pi: ", pi)
 print("logProb: ", oldLogProb)
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# After first iteration
+
+alpha, c = alpha_pass(A, B, pi, O)
+beta = beta_pass(A, B, O, c)
+gamma, di_gamma = gamma_pass(alpha, beta, A, B, O)
+A, B, pi = re_estimate(gamma, di_gamma, A, B, pi)
+logProb = log_prob(c)
+
+print("A: \n", A)
+print("B: \n", np.concatenate((V.reshape(1, M), np.round_(B, decimals=7)), axis=0).T)
+print("pi: ", np.round_(pi, decimals=7))
+print("logProb: ", logProb)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
