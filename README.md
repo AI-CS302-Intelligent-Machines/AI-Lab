@@ -58,7 +58,7 @@ The algorithm is repeated until convergence, at which point the maximum likeliho
 Ten bent (biased) coins are placed in a box with unknown bias values. A coin is randomly picked from the box and tossed 100 times. A file containing results of five hundred such instances is presented in tabular form with indicating head and 0 indicating tail. Find out the unknown bias values.
 
 [Solution Link](https://colab.research.google.com/drive/1aB4k6u-iquF5pnNVrBV-9o85hT4i9-g4?usp=sharing)
-[Reference Link]([https://www.academia.edu/2784600/What_is_the_expectation_maximization_algorithm)
+[Reference Link](https://www.academia.edu/2784600/What_is_the_expectation_maximization_algorithm)
 
 
 -   The code implements the EM algorithm to estimate the unknown bias values of the coins.
