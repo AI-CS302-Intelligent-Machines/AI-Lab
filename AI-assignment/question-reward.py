@@ -15,18 +15,6 @@ actions = ['continue', 'stop']
 #           'S10': {'correct': 5000000, 'stop': 1662100, 'wrong': -500000},
 #           'End': {'correct': 0, 'stop': 0, 'wrong': 0}}
 
-# reward = {'S1': {'correct': 100, 'stop': 0, 'wrong': 0},
-#           'S2': {'correct': 500, 'stop': 100, 'wrong': 0},
-#           'S3': {'correct': 1000, 'stop': 600, 'wrong': 0},
-#           'S4': {'correct': 5000, 'stop': 1600, 'wrong': 0},
-#           'S5': {'correct': 10000, 'stop': 2100, 'wrong': 0},
-#           'S6': {'correct': 50000, 'stop': 12100, 'wrong': 0},
-#           'S7': {'correct': 100000, 'stop': 62100, 'wrong': 0},
-#           'S8': {'correct': 500000, 'stop': 162100, 'wrong': 0},
-#           'S9': {'correct': 1000000, 'stop': 662100, 'wrong': 0},
-#           'S10': {'correct': 5000000, 'stop': 1662100, 'wrong': 0},
-#           'End': {'correct': 0, 'stop': 0, 'wrong': 0}}
-
 reward = {'S1': {'correct': 100, 'stop': 0, 'wrong': -100},
           'S2': {'correct': 500, 'stop': 100, 'wrong': -500},
           'S3': {'correct': 1000, 'stop': 600, 'wrong': -1000},
